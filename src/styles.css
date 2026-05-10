@@ -83,11 +83,11 @@
   --secondary-foreground: var(--ink);
   --muted: oklch(0.24 0.012 60);
   --muted-foreground: oklch(0.7 0.015 75);
-  --accent: oklch(0.78 0.16 55);
+  --accent: oklch(0.7 0.18 250);
   --accent-foreground: var(--paper);
   --border: oklch(0.30 0.012 60);
   --input: oklch(0.30 0.012 60);
-  --ring: oklch(0.78 0.16 55);
+  --ring: oklch(0.7 0.18 250);
 }
 
 @layer base {
