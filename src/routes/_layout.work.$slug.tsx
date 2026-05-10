@@ -1,6 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { useRouter } from "@tanstack/react-router";
 import { caseStudies, type CaseStudy } from "@/lib/case-studies";
+import { Reveal } from "@/components/Reveal";
 
 export const Route = createFileRoute("/_layout/work/$slug")({
   loader: ({ params }): CaseStudy => {
