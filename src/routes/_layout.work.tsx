@@ -20,12 +20,12 @@ function Work() {
   return (
     <div>
       <section className="mx-auto max-w-7xl px-6 pt-16 pb-12 md:px-10 md:pt-24">
-        <p className="eyebrow mb-6">Case Studies</p>
-        <h1 className="display-xl max-w-5xl">
+        <p className="eyebrow mb-6 animate-fade-up">Case Studies</p>
+        <h1 className="display-xl max-w-5xl animate-fade-up delay-100">
           Product problems, framed as
           <span className="italic text-accent"> systems</span>.
         </h1>
-        <p className="mt-8 max-w-2xl text-lg text-muted-foreground">
+        <p className="mt-8 max-w-2xl text-lg text-muted-foreground animate-fade-up delay-200">
           Each study reframes a product challenge from a behavior-first lens -
           showing the insight, the strategic direction, and the outcome focus.
         </p>
