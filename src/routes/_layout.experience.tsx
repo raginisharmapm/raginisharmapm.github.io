@@ -50,24 +50,26 @@ function Experience() {
 
       <section className="border-t border-border bg-secondary/30">
         <div className="mx-auto max-w-7xl px-6 py-20 text-center md:px-10">
-          <h2 className="display-md mb-6">Want the full version?</h2>
-          <div className="flex flex-wrap justify-center gap-3">
-            <a
-              href="/Ragini_Sharma_Resume.pdf"
-              target="_blank"
-              rel="noreferrer"
-              download
-              className="rounded-full bg-primary px-6 py-3 text-primary-foreground"
-            >
-              Download Resume
-            </a>
-            <Link
-              to="/contact"
-              className="rounded-full border border-border px-6 py-3 hover:bg-background"
-            >
-              Get in touch
-            </Link>
-          </div>
+          <Reveal>
+            <h2 className="display-md mb-6">Want the full version?</h2>
+            <div className="flex flex-wrap justify-center gap-3">
+              <a
+                href="/Ragini_Sharma_Resume.pdf"
+                target="_blank"
+                rel="noreferrer"
+                download
+                className="rounded-full bg-primary px-6 py-3 text-primary-foreground transition-transform duration-300 hover:scale-105"
+              >
+                Download Resume
+              </a>
+              <Link
+                to="/contact"
+                className="rounded-full border border-border px-6 py-3 transition-all duration-300 hover:bg-background hover:scale-105"
+              >
+                Get in touch
+              </Link>
+            </div>
+          </Reveal>
         </div>
       </section>
     </div>
