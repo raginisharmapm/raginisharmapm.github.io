@@ -22,7 +22,7 @@ export const caseStudies: CaseStudy[] = [
     tagline: "Retention is a trust problem, not a discount problem.",
     focus: ["Retention", "Product Strategy", "Funnel Analysis", "User Behavior"],
     problem:
-      "Food delivery in Tier-1 cities is highly competitive, but retention remains fragile. Users already have access to multiple apps, restaurants, and discounts, yet repeat ordering behavior remains inconsistent. The deeper issue was not lack of options - it was cognitive overload and delivery anxiety.",
+      "Food delivery in Tier-1 cities is highly competitive, but retention remains fragile. Users already have access to multiple apps, restaurants, and discounts, yet repeat ordering behavior remains inconsistent. The deeper issue was not lack of options — it was cognitive overload and delivery anxiety. Users faced decision fatigue during restaurant discovery, low confidence in delivery reliability, weak habit formation, and dependence on discounts for repeat usage.",
     insight:
       "Retention in food delivery is primarily a trust and decision-fatigue problem, not a discount problem.",
     explored: [
@@ -59,7 +59,7 @@ export const caseStudies: CaseStudy[] = [
     tagline: "Guidance beats discovery when uncertainty is high.",
     focus: ["Recommendation Systems", "Engagement", "Learning Experience", "Product Systems"],
     problem:
-      "Most online learning platforms optimize for content discovery rather than learner progression. While platforms offer abundant courses and recommendations, learners still disengage early and completion rates remain low. The challenge was not lack of content quality - it was uncertainty around what to learn next.",
+      "Most online learning platforms optimize for content discovery rather than learner progression. While platforms offer abundant courses and recommendations, learners still disengage early and completion rates remain low. The challenge was not lack of content quality — it was uncertainty around what to learn next. Users struggled with choice overload, low confidence in course selection, unclear progression paths, skill mismatch between learner and course, and weak post-course momentum.",
     insight:
       "Learners disengage because they lack confidence in what to learn next, not because they lack content.",
     explored: [
@@ -71,7 +71,7 @@ export const caseStudies: CaseStudy[] = [
       "Completion-oriented guidance systems",
     ],
     direction:
-      "Instead of treating recommendations as content ranking problems, the system reframed learning recommendations as progression guidance - shifting from “Which course is most relevant?” to “What is the best next step for this learner?”",
+      "Instead of treating recommendations as content ranking problems, the system reframed learning recommendations as progression guidance. The focus shifted from \"Which course is most relevant?\" to \"What is the best next step for this learner?\"",
     outcomes: ["+25% learner engagement", "+30% course completion", "+20% learner satisfaction"],
     learning:
       "Guidance systems outperform discovery systems when users face high uncertainty and long-term commitment decisions.",
@@ -80,11 +80,11 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "zepto-basket",
     product: "Zepto",
-    title: "Reducing Decision Friction to Improve Basket Size",
+    title: "Reducing Decision Friction to Improve Basket Size on Zepto",
     tagline: "Reduce cognitive effort to unlock basket growth.",
     focus: ["Consumer Behavior", "Conversion", "Growth", "AOV Strategy"],
     problem:
-      "Quick-commerce users often optimize for speed and certainty rather than basket expansion. Despite high traffic and purchase intent, average order value remained constrained by fragmented buying behavior and decision fatigue.",
+      "Quick-commerce users often optimize for speed and certainty rather than basket expansion. Despite high traffic and purchase intent, average order value remained constrained by fragmented buying behavior and decision fatigue. Users frequently purchased only urgent items, avoided browsing, dropped secondary purchases, and optimized for checkout speed.",
     insight: "Users optimize for certainty and convenience rather than basket completeness.",
     explored: [
       "Basket psychology",
@@ -94,7 +94,7 @@ export const caseStudies: CaseStudy[] = [
       "Decision simplification mechanisms",
     ],
     direction:
-      "Increase basket confidence rather than aggressively pushing upsells.",
+      "The strategy focused on increasing basket confidence rather than aggressively pushing upsells — building trust around what to add, not pressure to add more.",
     initiatives: [
       "Pre-configured need-based bundles",
       "High-intent recommendation timing",
@@ -102,7 +102,12 @@ export const caseStudies: CaseStudy[] = [
       "Simplified category grouping",
       "Context-aware cross-sell systems",
     ],
-    outcomes: ["Increase AOV", "Improve add-to-cart behavior", "Increase basket completion", "Improve checkout conversion"],
+    outcomes: [
+      "Increase AOV",
+      "Improve add-to-cart behavior",
+      "Increase basket completion",
+      "Improve checkout conversion",
+    ],
     learning:
       "Reducing cognitive effort often drives stronger monetization than increasing product visibility.",
     accent: "oklch(0.7 0.2 145)",
@@ -114,7 +119,7 @@ export const caseStudies: CaseStudy[] = [
     tagline: "An attention-to-habit conversion problem.",
     focus: ["Growth PM", "Activation", "Retention", "AARRR Funnel"],
     problem:
-      "X has strong cultural distribution and high awareness, but struggles to consistently convert attention into long-term participation and habitual usage. The challenge was not acquisition - it was identity formation and sustained engagement.",
+      "X has strong cultural distribution and high awareness, but struggles to consistently convert attention into long-term participation and habitual usage. The challenge was not acquisition — it was identity formation and sustained engagement. Many users consumed content passively, failed to build participation habits, felt unsafe contributing publicly, and experienced emotional fatigue.",
     insight: "X has an attention-to-habit conversion problem rather than an acquisition problem.",
     explored: [
       "Relevance lock-in systems",
@@ -125,7 +130,7 @@ export const caseStudies: CaseStudy[] = [
       "Community trust systems",
     ],
     direction:
-      "Improve early feed relevance, confidence in participation, lightweight contribution loops, and habit-driven engagement systems.",
+      "The strategy focused on improving early feed relevance, confidence in participation, lightweight contribution loops, and habit-driven engagement systems.",
     initiatives: [
       "Relevance-based onboarding",
       "Low-risk interaction systems",
@@ -145,12 +150,13 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "zepto-marketplace",
     product: "Zepto Pet Grooming Marketplace",
-    title: "Scaling a Hyperlocal Marketplace Expansion",
+    title: "Scaling a Hyperlocal Marketplace Expansion for Zepto",
     tagline: "Operational systems are product features.",
     focus: ["Marketplace Strategy", "Operations", "0→1 Products"],
     problem:
       "Expanding into hyperlocal services introduces operational complexity that traditional ecommerce systems do not face. The challenge was balancing supply reliability, scheduling complexity, service quality consistency, marketplace trust, and operational scalability.",
-    insight: "Marketplace expansion success depends on operational reliability and service trust loops.",
+    insight:
+      "Marketplace expansion success depends on operational reliability and service trust loops.",
     explored: [
       "Marketplace liquidity",
       "Supply-demand balancing",
@@ -159,7 +165,7 @@ export const caseStudies: CaseStudy[] = [
       "Customer trust mechanisms",
       "Expansion economics",
     ],
-    direction: "Prioritize operational reliability before aggressive expansion.",
+    direction: "The strategy prioritized operational reliability before aggressive expansion.",
     initiatives: [
       "Controlled geographic rollout",
       "Verified supply onboarding",
