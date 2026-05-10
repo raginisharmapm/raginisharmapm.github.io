@@ -1,6 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { useRouter } from "@tanstack/react-router";
 import { caseStudies, type CaseStudy } from "@/lib/case-studies";
+import { Reveal } from "@/components/Reveal";
 
 export const Route = createFileRoute("/_layout/work/$slug")({
   loader: ({ params }): CaseStudy => {
@@ -58,22 +59,22 @@ function CaseStudyPage() {
           backgroundImage: `linear-gradient(180deg, color-mix(in oklab, ${cs.accent} 12%, transparent), transparent)`,
         }}
       >
-        <div className="mx-auto max-w-7xl px-6 pt-12 pb-20 md:px-10 md:pt-20 md:pb-28">
+        <div className="mx-auto max-w-7xl px-6 pt-12 pb-16 md:px-10 md:pt-20 md:pb-24">
           <Link to="/work" className="eyebrow underline-link">
             ← All case studies
           </Link>
-          <div className="mt-10 flex items-center gap-3">
+          <div className="mt-10 flex items-center gap-3 animate-fade-up">
             <span
               className="h-3 w-3 rounded-full"
               style={{ backgroundColor: cs.accent }}
             />
             <span className="font-mono text-sm">{cs.product}</span>
           </div>
-          <h1 className="display-xl mt-6 max-w-5xl">{cs.title}</h1>
-          <p className="mt-8 max-w-3xl font-display text-2xl italic text-muted-foreground">
+          <h1 className="display-lg mt-6 max-w-5xl animate-fade-up delay-100">{cs.title}</h1>
+          <p className="mt-6 max-w-3xl font-display text-xl italic text-muted-foreground md:text-2xl animate-fade-up delay-200">
             {cs.tagline}
           </p>
-          <div className="mt-10 flex flex-wrap gap-2">
+          <div className="mt-8 flex flex-wrap gap-2 animate-fade-up delay-300">
             {cs.focus.map((f) => (
               <span
                 key={f}
@@ -149,15 +150,15 @@ function Section({
   children: React.ReactNode;
 }) {
   return (
-    <section className="mb-16 grid grid-cols-1 gap-6 md:grid-cols-12">
-      <div className="md:col-span-3">
+    <Reveal as="section" className="mb-16 grid grid-cols-1 gap-4 md:mb-20 md:grid-cols-12 md:gap-8">
+      <div className="md:col-span-4">
         <p className="font-mono text-xs text-muted-foreground">- {eyebrow}</p>
-        <h2 className="mt-2 font-display text-xl">{title}</h2>
+        <h2 className="mt-2 font-display text-2xl md:text-3xl">{title}</h2>
       </div>
-      <div className="text-lg leading-relaxed text-foreground/90 md:col-span-9">
+      <div className="text-base leading-relaxed text-foreground/90 md:col-span-8 md:text-lg">
         {children}
       </div>
-    </section>
+    </Reveal>
   );
 }
 
@@ -180,10 +181,10 @@ function List({ items, accent }: { items: string[]; accent: string }) {
 function Pull({ children, accent }: { children: React.ReactNode; accent: string }) {
   return (
     <blockquote
-      className="my-16 border-l-4 pl-8 font-display text-3xl leading-snug italic md:text-4xl"
+      className="my-12 border-l-4 pl-6 font-display text-2xl leading-snug italic md:my-16 md:pl-8 md:text-4xl"
       style={{ borderColor: accent }}
     >
-      “{children}”
+      "{children}"
     </blockquote>
   );
 }
