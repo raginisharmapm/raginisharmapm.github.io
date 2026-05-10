@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { skills } from "@/lib/case-studies";
 import portrait from "@/assets/ragini-portrait.jpeg";
+import { Reveal } from "@/components/Reveal";
 
 export const Route = createFileRoute("/_layout/about")({
   head: () => ({
@@ -29,17 +30,17 @@ function About() {
   return (
     <div>
       <section className="mx-auto max-w-7xl px-6 pt-16 pb-12 md:px-10 md:pt-24">
-        <p className="eyebrow mb-6">About</p>
+        <p className="eyebrow mb-6 animate-fade-up">About</p>
         <div className="flex flex-col items-start gap-10 md:flex-row md:items-center md:gap-14">
-          <div className="relative flex-shrink-0">
-            <div className="absolute -inset-3 rounded-full bg-gradient-to-br from-accent/40 to-primary/30 blur-2xl" />
+          <div className="relative flex-shrink-0 animate-scale-in">
+            <div className="absolute -inset-3 rounded-full bg-gradient-to-br from-accent/40 to-primary/30 blur-2xl animate-pulse" />
             <img
               src={portrait}
               alt="Portrait of Ragini Sharma"
-              className="relative h-44 w-44 rounded-full border border-border object-cover shadow-xl md:h-56 md:w-56"
+              className="relative h-44 w-44 rounded-full border border-border object-cover shadow-xl transition-transform duration-500 hover:scale-105 md:h-56 md:w-56"
             />
           </div>
-          <h1 className="display-xl max-w-3xl">
+          <h1 className="display-xl max-w-3xl animate-fade-up delay-200">
             Building for <span className="italic text-accent">behavior</span>,
             not for feature quantity.
           </h1>
@@ -47,7 +48,7 @@ function About() {
       </section>
 
       <section className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 pb-20 md:grid-cols-12 md:px-10">
-        <div className="prose-lg space-y-6 text-lg leading-relaxed text-foreground/90 md:col-span-8">
+        <Reveal className="prose-lg space-y-6 text-lg leading-relaxed text-foreground/90 md:col-span-8">
           <p>
             I'm a Product Manager with <strong>6+ years of experience</strong> across SaaS,
             marketplaces, AI-first products, workflow automation systems, and consumer
@@ -66,9 +67,9 @@ function About() {
             <em>why users hesitate, disengage, or fail to build habits</em> inside
             products - and designing systems that reduce that friction.
           </p>
-        </div>
+        </Reveal>
 
-        <aside className="md:col-span-4">
+        <Reveal as="aside" delay={150} className="md:col-span-4">
           <div className="sticky top-28 rounded-2xl border border-border bg-card p-8">
             <p className="eyebrow mb-4">Particularly interested in</p>
             <ul className="space-y-3">
@@ -80,7 +81,7 @@ function About() {
               ))}
             </ul>
           </div>
-        </aside>
+        </Reveal>
       </section>
 
       {/* SKILLS */}
@@ -89,8 +90,8 @@ function About() {
           <p className="eyebrow mb-3">Capabilities</p>
           <h2 className="display-lg mb-12 max-w-3xl">Skills & toolset</h2>
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
-            {Object.entries(skills).map(([group, items]) => (
-              <div key={group}>
+            {Object.entries(skills).map(([group, items], gi) => (
+              <Reveal key={group} delay={gi * 100}>
                 <h3 className="font-mono text-xs uppercase tracking-widest text-muted-foreground mb-5">
                   - {group}
                 </h3>
@@ -98,13 +99,13 @@ function About() {
                   {items.map((s) => (
                     <span
                       key={s}
-                      className="rounded-full border border-border bg-background px-4 py-2 text-sm"
+                      className="rounded-full border border-border bg-background px-4 py-2 text-sm transition-all duration-300 hover:scale-105 hover:border-accent hover:text-accent"
                     >
                       {s}
                     </span>
                   ))}
                 </div>
-              </div>
+              </Reveal>
             ))}
           </div>
         </div>
