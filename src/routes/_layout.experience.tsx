@@ -52,7 +52,10 @@ function Experience() {
           <h2 className="display-md mb-6">Want the full version?</h2>
           <div className="flex flex-wrap justify-center gap-3">
             <a
-              href="#"
+              href="/Ragini_Sharma_Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              download
               className="rounded-full bg-primary px-6 py-3 text-primary-foreground"
             >
               Download Resume
