@@ -27,20 +27,20 @@ function Home() {
     <div>
       {/* HERO */}
       <section className="mx-auto max-w-7xl px-6 pt-16 pb-24 md:px-10 md:pt-24 md:pb-32">
-        <p className="eyebrow mb-8">Available · Product Manager · 6+ yrs</p>
+        <p className="eyebrow mb-8 animate-fade-up">Available · Product Manager · 6+ yrs</p>
         <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-12 md:gap-12">
-          <h1 className="display-xl md:col-span-8">
+          <h1 className="display-xl md:col-span-8 animate-fade-up delay-100">
             I build products that reduce
             <span className="italic text-accent"> decision friction</span>,
             improve engagement, and earn long-term user trust.
           </h1>
-          <div className="md:col-span-4 md:justify-self-end">
+          <div className="md:col-span-4 md:justify-self-end animate-scale-in delay-200">
             <div className="relative">
-              <div className="absolute -inset-4 rounded-full bg-gradient-to-br from-accent/40 to-primary/30 blur-3xl" />
+              <div className="absolute -inset-4 rounded-full bg-gradient-to-br from-accent/40 to-primary/30 blur-3xl animate-pulse" />
               <img
                 src={portrait}
                 alt="Ragini Sharma"
-                className="relative h-56 w-56 rounded-full border border-border object-cover shadow-xl md:h-72 md:w-72"
+                className="relative h-44 w-44 rounded-full border border-border object-cover shadow-xl transition-transform duration-500 hover:scale-105 sm:h-56 sm:w-56 md:h-72 md:w-72"
               />
             </div>
           </div>
