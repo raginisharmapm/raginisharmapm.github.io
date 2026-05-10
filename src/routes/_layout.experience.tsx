@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { experience } from "@/lib/case-studies";
+import { Reveal } from "@/components/Reveal";
 
 export const Route = createFileRoute("/_layout/experience")({
   head: () => ({
