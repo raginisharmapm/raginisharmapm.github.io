@@ -21,8 +21,7 @@ export function PageLoader({ show }: LoaderProps) {
 
   if (!mounted) return null;
 
-  const name = "RAGINI SHARMA  •  PRODUCT MANAGER  •  ";
-  // Circumference of r=86 circle ≈ 540.35
+  const name = " • Ragini Sharma • Product Manager • Ragini Sharma • Product Manager";
   const circumference = 2 * Math.PI * 86;
 
   return (
