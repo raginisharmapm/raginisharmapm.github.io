@@ -54,7 +54,7 @@ function Contact() {
           intersect — I'd love to talk.
         </p>
 
-        <div className="mt-16 grid grid-cols-1 gap-px overflow-hidden rounded-2xl bg-border md:grid-cols-3">
+        <div className="mt-16 grid grid-cols-1 gap-px overflow-hidden rounded-2xl bg-border md:grid-cols-2">
           {channels.map((c) => (
             <a
               key={c.label}
