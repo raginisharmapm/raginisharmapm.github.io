@@ -36,13 +36,10 @@ export const Route = createFileRoute("/_layout/work/$slug")({
       </div>
     );
   },
-  notFoundComponent: () => (
-    <div className="mx-auto max-w-2xl px-6 py-32 text-center">
-      <p className="eyebrow mb-4">404</p>
-      <h1 className="display-md mb-6">Case study not found</h1>
-      <Link to="/work" className="underline-link">← Back to all work</Link>
-    </div>
-  ),
+  notFoundComponent: () => {
+    const { slug } = Route.useParams();
+    return <NotFoundState slug={slug} />;
+  },
 });
 
 function NotFoundState({ slug }: { slug?: string }) {
