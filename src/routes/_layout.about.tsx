@@ -90,8 +90,8 @@ function About() {
           <p className="eyebrow mb-3">Capabilities</p>
           <h2 className="display-lg mb-12 max-w-3xl">Skills & toolset</h2>
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
-            {Object.entries(skills).map(([group, items]) => (
-              <div key={group}>
+            {Object.entries(skills).map(([group, items], gi) => (
+              <Reveal key={group} delay={gi * 100}>
                 <h3 className="font-mono text-xs uppercase tracking-widest text-muted-foreground mb-5">
                   - {group}
                 </h3>
@@ -99,13 +99,13 @@ function About() {
                   {items.map((s) => (
                     <span
                       key={s}
-                      className="rounded-full border border-border bg-background px-4 py-2 text-sm"
+                      className="rounded-full border border-border bg-background px-4 py-2 text-sm transition-all duration-300 hover:scale-105 hover:border-accent hover:text-accent"
                     >
                       {s}
                     </span>
                   ))}
                 </div>
-              </div>
+              </Reveal>
             ))}
           </div>
         </div>
