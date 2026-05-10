@@ -16,6 +16,30 @@ export function SiteLayout() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
+  // Initial-mount loader
+  const [initialLoading, setInitialLoading] = useState(true);
+  useEffect(() => {
+    const t = setTimeout(() => setInitialLoading(false), 900);
+    return () => clearTimeout(t);
+  }, []);
+
+  // Route-transition loader (with min display so it doesn't flicker)
+  const isPending = useRouterState({
+    select: (s) => s.isLoading || s.isTransitioning,
+  });
+  const [routeLoading, setRouteLoading] = useState(false);
+  const minShowUntil = useRef<number>(0);
+  useEffect(() => {
+    if (isPending) {
+      setRouteLoading(true);
+      minShowUntil.current = Date.now() + 500;
+    } else {
+      const remaining = minShowUntil.current - Date.now();
+      const t = setTimeout(() => setRouteLoading(false), Math.max(0, remaining));
+      return () => clearTimeout(t);
+    }
+  }, [isPending]);
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
     onScroll();
@@ -23,10 +47,13 @@ export function SiteLayout() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Close mobile menu on route change
+  // Close menu + scroll to top on route change
   useEffect(() => {
     setOpen(false);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, [pathname]);
+
+  const showLoader = initialLoading || routeLoading;
 
   return (
     <div className="grain min-h-screen bg-background text-foreground">
