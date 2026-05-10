@@ -20,8 +20,8 @@ function Experience() {
   return (
     <div>
       <section className="mx-auto max-w-7xl px-6 pt-16 pb-12 md:px-10 md:pt-24">
-        <p className="eyebrow mb-6">Experience</p>
-        <h1 className="display-xl max-w-5xl">
+        <p className="eyebrow mb-6 animate-fade-up">Experience</p>
+        <h1 className="display-xl max-w-5xl animate-fade-up delay-100">
           Six years of shipping across
           <span className="italic text-accent"> categories</span>.
         </h1>
