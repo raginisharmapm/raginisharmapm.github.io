@@ -73,13 +73,21 @@ export function SiteLayout() {
             consumer platforms, marketplaces, and growth-focused startups.
           </div>
           <div className="flex flex-col gap-2 text-sm md:items-end">
-            <a className="underline-link w-fit" href="mailto:hello@raginisharma.com">
-              hello@raginisharma.com
+            <a className="underline-link w-fit" href="mailto:raginisharma.official@gmail.com">
+              raginisharma.official@gmail.com
             </a>
-            <a className="underline-link w-fit" href="https://linkedin.com" target="_blank" rel="noreferrer">
+            <a className="underline-link w-fit" href="tel:+919571675572">
+              +91 95716 75572
+            </a>
+            <a
+              className="underline-link w-fit"
+              href="https://www.linkedin.com/in/raginisharmaofficial/"
+              target="_blank"
+              rel="noreferrer"
+            >
               LinkedIn
             </a>
-            <a className="underline-link w-fit" href="#">Resume (PDF)</a>
+            <span className="text-muted-foreground">Gurgaon, Haryana</span>
           </div>
         </div>
         <div className="border-t border-border">
