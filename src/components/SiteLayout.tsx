@@ -1,6 +1,7 @@
-import { Link, Outlet, useLocation } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
+import { Link, Outlet, useLocation, useRouterState } from "@tanstack/react-router";
+import { useEffect, useRef, useState } from "react";
 import { Menu, X } from "lucide-react";
+import { PageLoader } from "@/components/PageLoader";
 
 const nav = [
   { to: "/", label: "Index" },
