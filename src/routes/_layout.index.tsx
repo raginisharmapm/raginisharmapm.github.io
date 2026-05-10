@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { caseStudies, principles } from "@/lib/case-studies";
+import portrait from "@/assets/ragini-portrait.jpeg";
 
 export const Route = createFileRoute("/_layout/")({
   head: () => ({
@@ -26,7 +27,14 @@ function Home() {
     <div>
       {/* HERO */}
       <section className="mx-auto max-w-7xl px-6 pt-16 pb-24 md:px-10 md:pt-24 md:pb-32">
-        <p className="eyebrow mb-8">Available · Product Manager · 6+ yrs</p>
+        <div className="mb-8 flex items-center gap-4">
+          <img
+            src={portrait}
+            alt="Ragini Sharma"
+            className="h-14 w-14 rounded-full border border-border object-cover shadow-sm"
+          />
+          <p className="eyebrow">Available · Product Manager · 6+ yrs</p>
+        </div>
         <h1 className="display-xl max-w-5xl">
           I build products that reduce
           <span className="italic text-accent"> decision friction</span>,
