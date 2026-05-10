@@ -21,7 +21,9 @@ export function PageLoader({ show }: LoaderProps) {
 
   if (!mounted) return null;
 
-  const name = "RAGINI SHARMA · PRODUCT MANAGER · ";
+  const name = "RAGINI SHARMA  •  PRODUCT MANAGER  •  ";
+  // Circumference of r=86 circle ≈ 540.35
+  const circumference = 2 * Math.PI * 86;
 
   return (
     <div
@@ -38,7 +40,7 @@ export function PageLoader({ show }: LoaderProps) {
         <svg
           viewBox="0 0 200 200"
           className="absolute inset-0 h-full w-full animate-spin"
-          style={{ animationDuration: "14s" }}
+          style={{ animationDuration: "16s" }}
         >
           <defs>
             <path
@@ -51,12 +53,17 @@ export function PageLoader({ show }: LoaderProps) {
             className="fill-foreground"
             style={{
               fontFamily: "var(--font-mono)",
-              fontSize: "10px",
-              letterSpacing: "0.32em",
+              fontSize: "11px",
+              letterSpacing: "0.18em",
             }}
           >
-            <textPath href="#loader-circle" startOffset="0">
-              {name.repeat(3)}
+            <textPath
+              href="#loader-circle"
+              startOffset="0"
+              textLength={circumference}
+              lengthAdjust="spacingAndGlyphs"
+            >
+              {name}
             </textPath>
           </text>
         </svg>
