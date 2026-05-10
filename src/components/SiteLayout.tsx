@@ -133,7 +133,7 @@ export function SiteLayout() {
         </div>
       </header>
 
-      <main className="relative z-[2]">
+      <main key={pathname} className="relative z-[2] animate-fade-in" style={{ animationDuration: "0.55s" }}>
         <Outlet />
       </main>
 
