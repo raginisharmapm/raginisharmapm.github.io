@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { caseStudies, principles } from "@/lib/case-studies";
 import portrait from "@/assets/ragini-portrait.jpeg";
+import { Reveal } from "@/components/Reveal";
 
 export const Route = createFileRoute("/_layout/")({
   head: () => ({
