@@ -30,10 +30,20 @@ function About() {
     <div>
       <section className="mx-auto max-w-7xl px-6 pt-16 pb-12 md:px-10 md:pt-24">
         <p className="eyebrow mb-6">About</p>
-        <h1 className="display-xl max-w-5xl">
-          Building for <span className="italic text-accent">behavior</span>,
-          not for feature quantity.
-        </h1>
+        <div className="flex flex-col items-start gap-10 md:flex-row md:items-center md:gap-14">
+          <div className="relative flex-shrink-0">
+            <div className="absolute -inset-3 rounded-full bg-gradient-to-br from-accent/40 to-primary/30 blur-2xl" />
+            <img
+              src={portrait}
+              alt="Portrait of Ragini Sharma"
+              className="relative h-44 w-44 rounded-full border border-border object-cover shadow-xl md:h-56 md:w-56"
+            />
+          </div>
+          <h1 className="display-xl max-w-3xl">
+            Building for <span className="italic text-accent">behavior</span>,
+            not for feature quantity.
+          </h1>
+        </div>
       </section>
 
       <section className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 pb-20 md:grid-cols-12 md:px-10">
