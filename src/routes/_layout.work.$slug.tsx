@@ -46,8 +46,9 @@ export const Route = createFileRoute("/_layout/work/$slug")({
 });
 
 function CaseStudyPage() {
-  const cs = Route.useLoaderData() as CaseStudy;
-  const idx = caseStudies.findIndex((c) => c.slug === cs.slug);
+  const { slug } = Route.useParams();
+  const cs = caseStudies.find((c) => c.slug === slug) as CaseStudy;
+  const idx = caseStudies.findIndex((c) => c.slug === slug);
   const next = caseStudies[(idx + 1) % caseStudies.length];
 
   return (
