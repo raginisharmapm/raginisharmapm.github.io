@@ -15,9 +15,26 @@ export const Route = createFileRoute("/_layout/contact")({
 });
 
 const channels = [
-  { label: "Email", value: "hello@raginisharma.com", href: "mailto:hello@raginisharma.com" },
-  { label: "LinkedIn", value: "linkedin.com/in/raginisharma", href: "https://linkedin.com" },
-  { label: "Resume", value: "Download PDF", href: "#" },
+  {
+    label: "Email",
+    value: "raginisharma.official@gmail.com",
+    href: "mailto:raginisharma.official@gmail.com",
+  },
+  {
+    label: "Phone",
+    value: "+91 95716 75572",
+    href: "tel:+919571675572",
+  },
+  {
+    label: "LinkedIn",
+    value: "linkedin.com/in/raginisharmaofficial",
+    href: "https://www.linkedin.com/in/raginisharmaofficial/",
+  },
+  {
+    label: "Location",
+    value: "Gurgaon, Haryana",
+    href: "https://maps.google.com/?q=Gurgaon,Haryana,India",
+  },
 ];
 
 function Contact() {
@@ -37,7 +54,7 @@ function Contact() {
           intersect — I'd love to talk.
         </p>
 
-        <div className="mt-16 grid grid-cols-1 gap-px overflow-hidden rounded-2xl bg-border md:grid-cols-3">
+        <div className="mt-16 grid grid-cols-1 gap-px overflow-hidden rounded-2xl bg-border md:grid-cols-2">
           {channels.map((c) => (
             <a
               key={c.label}

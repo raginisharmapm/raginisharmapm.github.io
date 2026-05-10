@@ -55,9 +55,10 @@ function Home() {
               </Link>
             </div>
             <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-muted-foreground md:justify-end">
-              <a className="underline-link" href="#">Resume</a>
-              <a className="underline-link" href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
-              <a className="underline-link" href="mailto:hello@raginisharma.com">Email</a>
+              <a className="underline-link" href="https://www.linkedin.com/in/raginisharmaofficial/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a className="underline-link" href="mailto:raginisharma.official@gmail.com">Email</a>
+              <a className="underline-link" href="tel:+919571675572">+91 95716 75572</a>
+              <span>Gurgaon, Haryana</span>
             </div>
           </div>
         </div>
