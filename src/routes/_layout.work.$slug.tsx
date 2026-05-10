@@ -59,22 +59,22 @@ function CaseStudyPage() {
           backgroundImage: `linear-gradient(180deg, color-mix(in oklab, ${cs.accent} 12%, transparent), transparent)`,
         }}
       >
-        <div className="mx-auto max-w-7xl px-6 pt-12 pb-20 md:px-10 md:pt-20 md:pb-28">
+        <div className="mx-auto max-w-7xl px-6 pt-12 pb-16 md:px-10 md:pt-20 md:pb-24">
           <Link to="/work" className="eyebrow underline-link">
             ← All case studies
           </Link>
-          <div className="mt-10 flex items-center gap-3">
+          <div className="mt-10 flex items-center gap-3 animate-fade-up">
             <span
               className="h-3 w-3 rounded-full"
               style={{ backgroundColor: cs.accent }}
             />
             <span className="font-mono text-sm">{cs.product}</span>
           </div>
-          <h1 className="display-xl mt-6 max-w-5xl">{cs.title}</h1>
-          <p className="mt-8 max-w-3xl font-display text-2xl italic text-muted-foreground">
+          <h1 className="display-lg mt-6 max-w-5xl animate-fade-up delay-100">{cs.title}</h1>
+          <p className="mt-6 max-w-3xl font-display text-xl italic text-muted-foreground md:text-2xl animate-fade-up delay-200">
             {cs.tagline}
           </p>
-          <div className="mt-10 flex flex-wrap gap-2">
+          <div className="mt-8 flex flex-wrap gap-2 animate-fade-up delay-300">
             {cs.focus.map((f) => (
               <span
                 key={f}
