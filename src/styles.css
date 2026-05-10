@@ -211,8 +211,8 @@
   .animate-marquee { animation: marquee 30s linear infinite; }
 
   @media (prefers-reduced-motion: reduce) {
-    main :is(h1, h2, h3, h4, h5, p, li, blockquote, a, span.eyebrow),
-    main :is(h1, h2, h3, h4, h5, p, li, blockquote, a, span.eyebrow):hover {
+    main :is(h1, h2, h3, h4, h5, p, li, blockquote, span.eyebrow),
+    main :is(h1, h2, h3, h4, h5, p, li, blockquote, span.eyebrow):hover {
       transform: none;
       transition: color 0.2s ease;
     }
