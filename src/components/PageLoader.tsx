@@ -51,9 +51,10 @@ export function PageLoader({ show }: LoaderProps) {
           <text
             className="fill-foreground"
             style={{
-              fontFamily: "var(--font-mono)",
-              fontSize: "11px",
-              letterSpacing: "0.18em",
+              fontFamily: "var(--font-display)",
+              fontSize: "13px",
+              fontStyle: "italic",
+              letterSpacing: "0.04em",
             }}
           >
             <textPath
