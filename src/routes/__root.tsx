@@ -73,18 +73,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Ragini Sharma | Product Manger" },
-      { name: "description", content: "Product Manager with 6+ years of experience building and scaling 0→1 SaaS, marketplace, AI-enabled, and digital
-transformation products" },
+      { name: "description", content: "Product Manager with 6+ years of experience building and scaling" },
       { name: "author", content: "Lovable" },
       { property: "og:title", content: "Ragini Sharma | Product Manger" },
-      { property: "og:description", content: "Product Manager with 6+ years of experience building and scaling 0→1 SaaS, marketplace, AI-enabled, and digital
-transformation products" },
+      { property: "og:description", content: "Product Manager with 6+ years of experience building and scaling" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "Ragini Sharma | Product Manger" },
-      { name: "twitter:description", content: "Product Manager with 6+ years of experience building and scaling 0→1 SaaS, marketplace, AI-enabled, and digital
-transformation products" },
+      { name: "twitter:description", content: "Product Manager with 6+ years of experience building and scaling" },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6e9ea4af-2802-4b7b-b60c-146335336c38/id-preview-8f9260a2--64057048-8501-465e-93c7-17641ee61dd7.lovable.app-1778432971367.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6e9ea4af-2802-4b7b-b60c-146335336c38/id-preview-8f9260a2--64057048-8501-465e-93c7-17641ee61dd7.lovable.app-1778432971367.png" },
     ],
