@@ -5,7 +5,7 @@ type RevealProps = {
   children: React.ReactNode;
   className?: string;
   delay?: number;
-  as?: keyof JSX.IntrinsicElements;
+  as?: React.ElementType;
   variant?: "up" | "in" | "scale";
 };
 
