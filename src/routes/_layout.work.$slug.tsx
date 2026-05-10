@@ -181,10 +181,10 @@ function List({ items, accent }: { items: string[]; accent: string }) {
 function Pull({ children, accent }: { children: React.ReactNode; accent: string }) {
   return (
     <blockquote
-      className="my-16 border-l-4 pl-8 font-display text-3xl leading-snug italic md:text-4xl"
+      className="my-12 border-l-4 pl-6 font-display text-2xl leading-snug italic md:my-16 md:pl-8 md:text-4xl"
       style={{ borderColor: accent }}
     >
-      “{children}”
+      "{children}"
     </blockquote>
   );
 }
