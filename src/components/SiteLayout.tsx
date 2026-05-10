@@ -57,6 +57,7 @@ export function SiteLayout() {
 
   return (
     <div className="grain min-h-screen bg-background text-foreground">
+      <PageLoader show={showLoader} />
       <header
         className={`sticky top-0 z-50 backdrop-blur transition-all ${
           scrolled || open ? "bg-background/90 border-b border-border" : "bg-transparent"
