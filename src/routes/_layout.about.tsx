@@ -5,7 +5,7 @@ import portrait from "@/assets/ragini-portrait.jpeg";
 export const Route = createFileRoute("/_layout/about")({
   head: () => ({
     meta: [
-      { title: "About — Ragini Sharma" },
+      { title: "About - Ragini Sharma" },
       {
         name: "description",
         content:
@@ -64,7 +64,7 @@ function About() {
             I enjoy working on products where user behavior, business goals, and
             operational complexity intersect. My approach is grounded in understanding{" "}
             <em>why users hesitate, disengage, or fail to build habits</em> inside
-            products — and designing systems that reduce that friction.
+            products - and designing systems that reduce that friction.
           </p>
         </div>
 
@@ -92,7 +92,7 @@ function About() {
             {Object.entries(skills).map(([group, items]) => (
               <div key={group}>
                 <h3 className="font-mono text-xs uppercase tracking-widest text-muted-foreground mb-5">
-                  — {group}
+                  - {group}
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {items.map((s) => (

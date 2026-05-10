@@ -5,13 +5,13 @@ import portrait from "@/assets/ragini-portrait.jpeg";
 export const Route = createFileRoute("/_layout/")({
   head: () => ({
     meta: [
-      { title: "Ragini Sharma — Product Manager | Growth & Retention" },
+      { title: "Ragini Sharma - Product Manager | Growth & Retention" },
       {
         name: "description",
         content:
           "Product Manager with 6+ years across SaaS, marketplaces, AI-first products and consumer platforms. Building products that reduce decision friction and create long-term user trust.",
       },
-      { property: "og:title", content: "Ragini Sharma — Product Manager" },
+      { property: "og:title", content: "Ragini Sharma - Product Manager" },
       {
         property: "og:description",
         content:
@@ -44,7 +44,7 @@ function Home() {
         <div className="mt-12 grid grid-cols-1 gap-10 md:grid-cols-12 md:gap-12">
           <p className="text-lg leading-relaxed text-muted-foreground md:col-span-7">
             Working across SaaS, marketplaces, AI-first products, workflow automation,
-            and consumer platforms — solving ambiguous problems through user behavior
+            and consumer platforms - solving ambiguous problems through user behavior
             analysis, structured prioritization, and scalable execution.
           </p>
           <div className="flex flex-col gap-3 text-sm md:col-span-5 md:items-end">
@@ -95,7 +95,7 @@ function Home() {
       <section className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
         <div className="mb-16 flex items-end justify-between gap-6">
           <div>
-            <p className="eyebrow mb-3">01 — Featured Work</p>
+            <p className="eyebrow mb-3">01 - Featured Work</p>
             <h2 className="display-lg max-w-2xl">Selected case studies</h2>
           </div>
           <Link to="/work" className="underline-link hidden text-sm md:inline">
@@ -142,7 +142,7 @@ function Home() {
       {/* PRINCIPLES */}
       <section className="border-t border-border bg-secondary/30">
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
-          <p className="eyebrow mb-3">02 — Operating Principles</p>
+          <p className="eyebrow mb-3">02 - Operating Principles</p>
           <h2 className="display-lg mb-16 max-w-3xl">
             How I think about <span className="italic text-accent">product</span>.
           </h2>

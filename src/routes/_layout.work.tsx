@@ -4,7 +4,7 @@ import { caseStudies } from "@/lib/case-studies";
 export const Route = createFileRoute("/_layout/work")({
   head: () => ({
     meta: [
-      { title: "Case Studies — Ragini Sharma" },
+      { title: "Case Studies - Ragini Sharma" },
       {
         name: "description",
         content:
@@ -25,7 +25,7 @@ function Work() {
           <span className="italic text-accent"> systems</span>.
         </h1>
         <p className="mt-8 max-w-2xl text-lg text-muted-foreground">
-          Each study reframes a product challenge from a behavior-first lens —
+          Each study reframes a product challenge from a behavior-first lens -
           showing the insight, the strategic direction, and the outcome focus.
         </p>
       </section>
