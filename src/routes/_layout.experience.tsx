@@ -30,8 +30,8 @@ function Experience() {
       <section className="mx-auto max-w-5xl px-6 pb-24 md:px-10">
         <ol className="relative border-l border-border pl-8 md:pl-12">
           {experience.map((e, i) => (
-            <li key={e.company} className="relative pb-16 last:pb-0">
-              <span className="absolute -left-[37px] md:-left-[49px] flex h-6 w-6 items-center justify-center rounded-full bg-background border border-border font-mono text-[10px]">
+            <Reveal as="li" key={e.company} delay={i * 80} className="relative pb-16 last:pb-0">
+              <span className="absolute -left-[37px] md:-left-[49px] flex h-6 w-6 items-center justify-center rounded-full bg-background border border-border font-mono text-[10px] transition-transform duration-300 hover:scale-125 hover:border-accent hover:text-accent">
                 {String(i + 1).padStart(2, "0")}
               </span>
               <div className="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
@@ -43,7 +43,7 @@ function Experience() {
               <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
                 {e.summary}
               </p>
-            </li>
+            </Reveal>
           ))}
         </ol>
       </section>
