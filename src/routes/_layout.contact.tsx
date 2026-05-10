@@ -3,7 +3,7 @@ import { createFileRoute } from "@tanstack/react-router";
 export const Route = createFileRoute("/_layout/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Ragini Sharma" },
+      { title: "Contact - Ragini Sharma" },
       {
         name: "description",
         content:
@@ -51,7 +51,7 @@ function Contact() {
           Across SaaS, AI-first products, consumer platforms, marketplaces, and
           growth-focused startup environments. If you're working on a product
           where user behavior, business goals, and operational complexity
-          intersect — I'd love to talk.
+          intersect - I'd love to talk.
         </p>
 
         <div className="mt-16 grid grid-cols-1 gap-px overflow-hidden rounded-2xl bg-border md:grid-cols-2">
@@ -80,7 +80,7 @@ function Contact() {
           <h2 className="display-lg italic">
             “Simplicity is a product strategy.”
           </h2>
-          <p className="eyebrow mt-6">— Ragini Sharma</p>
+          <p className="eyebrow mt-6">- Ragini Sharma</p>
         </div>
       </section>
     </div>

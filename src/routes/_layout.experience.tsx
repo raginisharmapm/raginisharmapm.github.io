@@ -4,7 +4,7 @@ import { experience } from "@/lib/case-studies";
 export const Route = createFileRoute("/_layout/experience")({
   head: () => ({
     meta: [
-      { title: "Experience — Ragini Sharma" },
+      { title: "Experience - Ragini Sharma" },
       {
         name: "description",
         content:

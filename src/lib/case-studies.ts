@@ -22,7 +22,7 @@ export const caseStudies: CaseStudy[] = [
     tagline: "Retention is a trust problem, not a discount problem.",
     focus: ["Retention", "Product Strategy", "Funnel Analysis", "User Behavior"],
     problem:
-      "Food delivery in Tier-1 cities is highly competitive, but retention remains fragile. Users already have access to multiple apps, restaurants, and discounts, yet repeat ordering behavior remains inconsistent. The deeper issue was not lack of options — it was cognitive overload and delivery anxiety.",
+      "Food delivery in Tier-1 cities is highly competitive, but retention remains fragile. Users already have access to multiple apps, restaurants, and discounts, yet repeat ordering behavior remains inconsistent. The deeper issue was not lack of options - it was cognitive overload and delivery anxiety.",
     insight:
       "Retention in food delivery is primarily a trust and decision-fatigue problem, not a discount problem.",
     explored: [
@@ -59,7 +59,7 @@ export const caseStudies: CaseStudy[] = [
     tagline: "Guidance beats discovery when uncertainty is high.",
     focus: ["Recommendation Systems", "Engagement", "Learning Experience", "Product Systems"],
     problem:
-      "Most online learning platforms optimize for content discovery rather than learner progression. While platforms offer abundant courses and recommendations, learners still disengage early and completion rates remain low. The challenge was not lack of content quality — it was uncertainty around what to learn next.",
+      "Most online learning platforms optimize for content discovery rather than learner progression. While platforms offer abundant courses and recommendations, learners still disengage early and completion rates remain low. The challenge was not lack of content quality - it was uncertainty around what to learn next.",
     insight:
       "Learners disengage because they lack confidence in what to learn next, not because they lack content.",
     explored: [
@@ -71,7 +71,7 @@ export const caseStudies: CaseStudy[] = [
       "Completion-oriented guidance systems",
     ],
     direction:
-      "Instead of treating recommendations as content ranking problems, the system reframed learning recommendations as progression guidance — shifting from “Which course is most relevant?” to “What is the best next step for this learner?”",
+      "Instead of treating recommendations as content ranking problems, the system reframed learning recommendations as progression guidance - shifting from “Which course is most relevant?” to “What is the best next step for this learner?”",
     outcomes: ["+25% learner engagement", "+30% course completion", "+20% learner satisfaction"],
     learning:
       "Guidance systems outperform discovery systems when users face high uncertainty and long-term commitment decisions.",
@@ -114,7 +114,7 @@ export const caseStudies: CaseStudy[] = [
     tagline: "An attention-to-habit conversion problem.",
     focus: ["Growth PM", "Activation", "Retention", "AARRR Funnel"],
     problem:
-      "X has strong cultural distribution and high awareness, but struggles to consistently convert attention into long-term participation and habitual usage. The challenge was not acquisition — it was identity formation and sustained engagement.",
+      "X has strong cultural distribution and high awareness, but struggles to consistently convert attention into long-term participation and habitual usage. The challenge was not acquisition - it was identity formation and sustained engagement.",
     insight: "X has an attention-to-habit conversion problem rather than an acquisition problem.",
     explored: [
       "Relevance lock-in systems",

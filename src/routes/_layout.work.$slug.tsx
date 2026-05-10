@@ -11,7 +11,7 @@ export const Route = createFileRoute("/_layout/work/$slug")({
   head: ({ loaderData }) => ({
     meta: loaderData
       ? [
-          { title: `${loaderData.title} — Ragini Sharma` },
+          { title: `${loaderData.title} - Ragini Sharma` },
           { name: "description", content: loaderData.tagline },
           { property: "og:title", content: loaderData.title },
           { property: "og:description", content: loaderData.tagline },
@@ -151,7 +151,7 @@ function Section({
   return (
     <section className="mb-16 grid grid-cols-1 gap-6 md:grid-cols-12">
       <div className="md:col-span-3">
-        <p className="font-mono text-xs text-muted-foreground">— {eyebrow}</p>
+        <p className="font-mono text-xs text-muted-foreground">- {eyebrow}</p>
         <h2 className="mt-2 font-display text-xl">{title}</h2>
       </div>
       <div className="text-lg leading-relaxed text-foreground/90 md:col-span-9">
