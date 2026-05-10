@@ -167,18 +167,19 @@
 
 @layer utilities {
   /* Hover text zoom effect - replaces previous glass hover */
-  main :is(h1, h2, h3, h4, h5, p, li, blockquote, a, span.eyebrow) {
-    transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.35s ease, letter-spacing 0.35s ease;
+  main :is(h1, h2, h3, h4, h5, p, li, blockquote, span.eyebrow) {
+    transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.35s ease;
     transform-origin: left center;
-    display: inline-block;
     will-change: transform;
   }
-  main :is(h1, h2, h3, h4, h5, p, li, blockquote, a, span.eyebrow):hover {
+  main :is(h1, h2, h3, h4, h5):hover {
     transform: scale(1.04);
     color: var(--color-accent);
   }
-  main li, main p { display: block; }
-  main li:hover, main p:hover { transform: scale(1.02); }
+  main :is(p, li, blockquote, span.eyebrow):hover {
+    transform: scale(1.02);
+    color: var(--color-accent);
+  }
 
   /* Reveal-on-scroll / entrance animations */
   @keyframes fade-up {
