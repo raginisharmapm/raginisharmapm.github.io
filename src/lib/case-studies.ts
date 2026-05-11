@@ -12,6 +12,7 @@ export type CaseStudy = {
   outcomes: string[];
   learning: string;
   accent: string;
+  proofOfWork?: string;
 };
 
 export const caseStudies: CaseStudy[] = [
@@ -51,6 +52,7 @@ export const caseStudies: CaseStudy[] = [
     learning:
       "Habit formation in consumer products often depends more on predictability and trust than incentives.",
     accent: "oklch(0.65 0.22 25)",
+    proofOfWork: "/case-studies/zomato-retention.pdf",
   },
   {
     slug: "algs-learning",

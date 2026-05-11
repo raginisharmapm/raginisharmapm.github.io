@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { FileText } from "lucide-react";
 import { caseStudies } from "@/lib/case-studies";
 import { Reveal } from "@/components/Reveal";
 
@@ -44,10 +45,25 @@ function Work() {
                   <span className="font-mono text-xs text-muted-foreground">
                     {String(i + 1).padStart(2, "0")} · {cs.product}
                   </span>
-                  <span
-                    className="h-2.5 w-2.5 rounded-full transition-transform duration-300 group-hover:scale-150"
-                    style={{ backgroundColor: cs.accent }}
-                  />
+                  <div className="flex items-center gap-3">
+                    {cs.proofOfWork && (
+                      <span
+                        className="inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider"
+                        style={{
+                          color: cs.accent,
+                          borderColor: `color-mix(in oklab, ${cs.accent} 40%, transparent)`,
+                          backgroundColor: `color-mix(in oklab, ${cs.accent} 10%, transparent)`,
+                        }}
+                      >
+                        <FileText className="h-3 w-3" />
+                        PDF
+                      </span>
+                    )}
+                    <span
+                      className="h-2.5 w-2.5 rounded-full transition-transform duration-300 group-hover:scale-150"
+                      style={{ backgroundColor: cs.accent }}
+                    />
+                  </div>
                 </div>
                 <h2 className="mt-8 font-display text-2xl leading-tight md:text-3xl">
                   {cs.title}

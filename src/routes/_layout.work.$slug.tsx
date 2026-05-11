@@ -139,6 +139,44 @@ function CaseStudyPage() {
             {cs.learning}
           </p>
         </Section>
+
+        {cs.proofOfWork && (
+          <Section eyebrow="06" title="Proof of work">
+            <div className="flex flex-wrap gap-3">
+              <a
+                href={cs.proofOfWork}
+                download
+                className="inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-medium text-primary-foreground transition-transform hover:-translate-y-0.5"
+                style={{ backgroundColor: cs.accent }}
+              >
+                ↓ Download PDF
+              </a>
+              <a
+                href={cs.proofOfWork}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-3 text-sm font-medium hover:bg-secondary"
+              >
+                Open in new tab ↗
+              </a>
+            </div>
+            <div
+              className="mt-6 overflow-hidden rounded-2xl border border-border bg-secondary/30"
+              style={{ aspectRatio: "4 / 5" }}
+            >
+              <iframe
+                src={cs.proofOfWork}
+                title={`${cs.title} — Proof of work`}
+                loading="lazy"
+                className="h-full w-full"
+              >
+                <p className="p-6 text-sm text-muted-foreground">
+                  Your browser can't preview PDFs inline. Please download the file instead.
+                </p>
+              </iframe>
+            </div>
+          </Section>
+        )}
       </div>
 
       {/* NEXT */}
