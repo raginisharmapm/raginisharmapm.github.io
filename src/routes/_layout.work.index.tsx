@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { FileText } from "lucide-react";
 import { caseStudies } from "@/lib/case-studies";
 import { Reveal } from "@/components/Reveal";
 
