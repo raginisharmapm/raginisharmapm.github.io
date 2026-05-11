@@ -12,6 +12,7 @@ export type CaseStudy = {
   outcomes: string[];
   learning: string;
   accent: string;
+  proofOfWork?: string;
 };
 
 export const caseStudies: CaseStudy[] = [
