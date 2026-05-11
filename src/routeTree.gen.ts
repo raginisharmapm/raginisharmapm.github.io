@@ -15,6 +15,7 @@ import { Route as LayoutWorkRouteImport } from './routes/_layout.work'
 import { Route as LayoutExperienceRouteImport } from './routes/_layout.experience'
 import { Route as LayoutContactRouteImport } from './routes/_layout.contact'
 import { Route as LayoutAboutRouteImport } from './routes/_layout.about'
+import { Route as LayoutWorkIndexRouteImport } from './routes/_layout.work.index'
 import { Route as LayoutWorkSlugRouteImport } from './routes/_layout.work.$slug'
 
 const LayoutRoute = LayoutRouteImport.update({
@@ -46,6 +47,11 @@ const LayoutAboutRoute = LayoutAboutRouteImport.update({
   path: '/about',
   getParentRoute: () => LayoutRoute,
 } as any)
+const LayoutWorkIndexRoute = LayoutWorkIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => LayoutWorkRoute,
+} as any)
 const LayoutWorkSlugRoute = LayoutWorkSlugRouteImport.update({
   id: '/$slug',
   path: '/$slug',
@@ -59,14 +65,15 @@ export interface FileRoutesByFullPath {
   '/experience': typeof LayoutExperienceRoute
   '/work': typeof LayoutWorkRouteWithChildren
   '/work/$slug': typeof LayoutWorkSlugRoute
+  '/work/': typeof LayoutWorkIndexRoute
 }
 export interface FileRoutesByTo {
   '/about': typeof LayoutAboutRoute
   '/contact': typeof LayoutContactRoute
   '/experience': typeof LayoutExperienceRoute
-  '/work': typeof LayoutWorkRouteWithChildren
   '/': typeof LayoutIndexRoute
   '/work/$slug': typeof LayoutWorkSlugRoute
+  '/work': typeof LayoutWorkIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -77,6 +84,7 @@ export interface FileRoutesById {
   '/_layout/work': typeof LayoutWorkRouteWithChildren
   '/_layout/': typeof LayoutIndexRoute
   '/_layout/work/$slug': typeof LayoutWorkSlugRoute
+  '/_layout/work/': typeof LayoutWorkIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -87,8 +95,9 @@ export interface FileRouteTypes {
     | '/experience'
     | '/work'
     | '/work/$slug'
+    | '/work/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/about' | '/contact' | '/experience' | '/work' | '/' | '/work/$slug'
+  to: '/about' | '/contact' | '/experience' | '/' | '/work/$slug' | '/work'
   id:
     | '__root__'
     | '/_layout'
@@ -98,6 +107,7 @@ export interface FileRouteTypes {
     | '/_layout/work'
     | '/_layout/'
     | '/_layout/work/$slug'
+    | '/_layout/work/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -148,6 +158,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LayoutAboutRouteImport
       parentRoute: typeof LayoutRoute
     }
+    '/_layout/work/': {
+      id: '/_layout/work/'
+      path: '/'
+      fullPath: '/work/'
+      preLoaderRoute: typeof LayoutWorkIndexRouteImport
+      parentRoute: typeof LayoutWorkRoute
+    }
     '/_layout/work/$slug': {
       id: '/_layout/work/$slug'
       path: '/$slug'
@@ -160,10 +177,12 @@ declare module '@tanstack/react-router' {
 
 interface LayoutWorkRouteChildren {
   LayoutWorkSlugRoute: typeof LayoutWorkSlugRoute
+  LayoutWorkIndexRoute: typeof LayoutWorkIndexRoute
 }
 
 const LayoutWorkRouteChildren: LayoutWorkRouteChildren = {
   LayoutWorkSlugRoute: LayoutWorkSlugRoute,
+  LayoutWorkIndexRoute: LayoutWorkIndexRoute,
 }
 
 const LayoutWorkRouteWithChildren = LayoutWorkRoute._addFileChildren(
