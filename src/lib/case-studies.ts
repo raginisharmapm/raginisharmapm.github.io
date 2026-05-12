@@ -78,6 +78,7 @@ export const caseStudies: CaseStudy[] = [
     learning:
       "Guidance systems outperform discovery systems when users face high uncertainty and long-term commitment decisions.",
     accent: "oklch(0.62 0.18 200)",
+    proofOfWork: "/case-studies/algs-learning.pdf",
   },
   {
     slug: "zepto-basket",
@@ -113,6 +114,7 @@ export const caseStudies: CaseStudy[] = [
     learning:
       "Reducing cognitive effort often drives stronger monetization than increasing product visibility.",
     accent: "oklch(0.7 0.2 145)",
+    proofOfWork: "/case-studies/zepto-basket.pdf",
   },
   {
     slug: "x-participation",
@@ -148,6 +150,7 @@ export const caseStudies: CaseStudy[] = [
     learning:
       "Users form habits faster when participation feels psychologically safe and immediately rewarding.",
     accent: "oklch(0.55 0.15 270)",
+    proofOfWork: "/case-studies/x-participation.pdf",
   },
   {
     slug: "zepto-marketplace",
