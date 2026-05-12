@@ -186,6 +186,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     learning: "Operational systems are product features in service marketplaces.",
     accent: "oklch(0.68 0.18 60)",
+    proofOfWork: "/case-studies/zepto-marketplace.pdf",
   },
 ];
 
